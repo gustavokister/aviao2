@@ -1,0 +1,25 @@
+ body { font-family: sans-serif; text-align: center; padding: 20px; background-color: #f0f2f5; }
+        .painel { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block; }
+        button { margin: 10px; padding: 10px 20px; cursor: pointer; border: none; border-radius: 5px; color: white; }
+        #btnGastar { background-color: #e74c3c; }
+        #btnAbastecerSeguro { background-color: #2ecc71; }
+ 
+    @keyframes piscaAmarelo {
+        0% { background-color: #f0f2f5; }
+        50% { background-color: rgb(182, 182, 100); }
+        100% { background-color: #f0f2f5; }
+    }
+
+    @keyframes pisca {
+        0% { background-color: #f0f2f5; }
+        50% { background-color: rgb(194, 114, 90); }
+        100% { background-color: #f0f2f5; }
+    }
+
+    .alerta-leve {
+        animation: piscaAmarelo 0.5s infinite;
+    }
+
+    .alerta-grave {
+        animation: pisca 0.3s infinite;
+    }
